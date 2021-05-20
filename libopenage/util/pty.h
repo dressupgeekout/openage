@@ -9,6 +9,11 @@
 #  include <sys/ioctl.h>
 #  include <termios.h>
 #  include <libutil.h>
+#elif defined(__NetBSD__)
+#  include <sys/types.h>
+#  include <sys/ioctl.h>
+#  include <termios.h>
+#  include <util.h>
 #elif _WIN32
 // TODO not yet implemented
 #else
