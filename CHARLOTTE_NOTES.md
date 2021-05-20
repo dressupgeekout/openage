@@ -38,3 +38,5 @@ export CMAKE_PREFIX_PATH=/usr/pkg/qt5
 		make: stopped in /home/charlotte/devel/openage/build
 
 i bet you pty.h is a linux thing...
+
+- i guess we also need libinotify -- otherwise, -DWANT_INOTIFY:BOOL=OFF
