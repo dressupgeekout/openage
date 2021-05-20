@@ -89,7 +89,8 @@ std::string self_exec_filename() {
 
 		return std::string{buf.get()};
 	}
-
+#elif __NetBSD__
+  return read_symlink("/proc/curproc/exe");
 #elif _WIN32
 	// TODO not yet implemented
 	return std::string("openage.exe"); // FIXME: wild guess though
